@@ -3,6 +3,7 @@ import { TurboModuleRegistry } from 'react-native';
 
 export interface Spec extends TurboModule {
   multiply(a: number, b: number): number;
+  check(): boolean;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('TestNewTurboModule');

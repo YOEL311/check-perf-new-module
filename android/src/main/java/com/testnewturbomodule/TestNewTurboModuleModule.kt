@@ -17,6 +17,11 @@ class TestNewTurboModuleModule(reactContext: ReactApplicationContext) :
     return a * b
   }
 
+
+  override fun check(): Boolean {
+    return true
+  }
+
   companion object {
     const val NAME = "TestNewTurboModule"
   }
