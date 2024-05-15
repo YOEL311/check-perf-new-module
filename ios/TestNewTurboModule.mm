@@ -11,6 +11,10 @@ RCT_EXPORT_MODULE()
     return result;
 }
 
+- (NSNumber *)check {
+    return @(YES);
+}
+
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
 {
